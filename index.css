@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto;
+    font-size: 1.2rem;
+    background: url(/images/backcover.svg);
+    background-repeat: no-repeat;
+    background-position: top right ;
+    background-origin: top right;
+
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+nav button{
+    border: none;
+    font-weight: 600;
+    padding: -2.8rem 1.5rem;
+    margin-bottom: 1.2rem;
+    margin-top: -.1rem;
+    width: 8rem;
+    border-radius: 6rem;
+    background: linear-gradient(90deg, #955bf1 , #ff89db);    color:#fff;
+}
+.nav-items{
+    display: flex;
+    color: #3e4794;
+    font-weight:bolder;
+}
+
+.nav-item{
+    padding-left: 2rem;
+}
+.nav-item:hover{
+    text-decoration: overline;
+}
+
+.intro-section{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+
+}
+.left-section>h1{
+    position: absolute;
+    top: 15rem;
+    left: 8.5rem;
+    font-size: 5rem;
+    color: #3e4794;
+
+}
+.left-section>h4{
+    position: absolute;
+    font-weight: normal;
+    line-height: 1.3em;
+    top: 28rem;
+    width: 30%;
+    left: 8.5rem;
+}
+.learn-more-btn{
+    border: none;
+    position: absolute;
+    top: 38rem;
+    left: 8.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 0rem;
+    width: 15rem;
+    border-radius: 6rem;
+    color: #fff;
+    font-weight: bolder;
+    background: linear-gradient(90deg, #955bf1, #ff89db);
+}
+
+.imgs-div{
+    height:fit-content;
+    width: auto;
+    overflow: y;
+    position:absolute;
+    right: 10rem;
+    margin-right: -6rem;
+}
+
+/* mobile responsive */
+
+@media screen and (max-width:480px) {
+    body{
+        background-color: #333;
+        background: url(/images/backcover.svg);
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-origin: top;
+        overflow-x: hidden;
+    }
+    .nav-items{
+        display: none;
+    }
+    .signin-btn{
+        position: relative;
+        left: 3rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        text-align: center;
+    }
+    img#intro-img{
+        width: 350px;
+        position: relative;
+        left: 10rem;
+        bottom: 7rem;
+    }
+nav img{
+    padding-left: 3rem;
+    width: 8rem;
+    margin-bottom: .8rem;
+}
+.left-section h1{
+    position: absolute;
+    top: 18rem;
+    left: 5rem;
+    font-size: 4rem;
+    z-index:1;
+}
+.left-section>h4{
+    position: absolute;
+    font-weight: normal;
+    line-height: 1.3em;
+    top: 30rem;
+    width: 80%;
+    left: 3rem;
+    margin: 2rem auto;
+}
+.learn-more-btn{
+    border: none;
+    position: absolute;
+    top: 39rem;
+    left: 3rem;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+}
+
+/* tab responsive design */
+
+@media screen and (min-device-width: 481px) and (max-device-width: 900px) 
+ {
+    body{
+    /* {background-color: #333; */
+        background: url(/images/backcover.svg);
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-origin: top;
+    }
+    .nav-items{
+        display: none;
+    }
+    .signin-btn{
+        position: relative;
+        left: 8rem;
+    }
+    img#intro-img{
+        width: 367px;
+        position: relative;
+        left: 3rem;
+        bottom: 0rem;
+    }
+
+ .left-section h1{
+    position: absolute;
+    top: 30rem;
+    left: 5rem;
+    font-size: 4rem;
+    z-index:1;
+ }
+ .left-section>h4{
+    position: absolute;
+    font-weight: normal;
+    line-height: 1.3em;
+    top: 38rem;
+    width: 90%;
+    left: 5rem;
+    margin: 5rem auto;
+    font-size: 1.8rem;
+ }
+ .learn-more-btn{
+    border: none;
+    position: absolute;
+    top: 32rem;
+    left: 26rem;
+    padding: 1rem;
+    margin: 2rem auto;
+ }
+ #intro-img {
+    width: 50vw;
+    height: auto;
+  }
+
+}
